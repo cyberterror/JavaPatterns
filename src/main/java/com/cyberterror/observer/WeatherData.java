@@ -2,21 +2,37 @@ package com.cyberterror.observer;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class WeatherData implements Subject {
 
 
     // API METHODS
     public float getTemperature() {
-        return 0;
+        float minX = 50.0f;
+        float maxX = 100.0f;
+
+        Random rand = new Random();
+
+        return rand.nextFloat() * (maxX - minX) + minX;
     }
 
     public float getHumidity() {
-        return 0;
+        float minX = 50.0f;
+        float maxX = 100.0f;
+
+        Random rand = new Random();
+
+        return rand.nextFloat() * (maxX - minX) + minX;
     }
 
     public float getPressure() {
-        return 0;
+        float minX = 50.0f;
+        float maxX = 100.0f;
+
+        Random rand = new Random();
+
+        return rand.nextFloat() * (maxX - minX) + minX;
     }
 
     // API callback
@@ -42,6 +58,13 @@ public class WeatherData implements Subject {
     public void notifyObservers() {
         for (Observer observer : this.observers) {
             observer.update(getTemperature(), getHumidity(), getPressure());
+        }
+    }
+
+    public void startWorking() throws InterruptedException {
+        while (true) {
+            Thread.sleep(1000);
+            measurementsChanged();
         }
     }
 }
