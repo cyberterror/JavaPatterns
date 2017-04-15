@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.cyberterror.observer_jdk.AverageConditionDisplay</OriginalElement>
+  <nodes>
+    <node x="411.4166666666667" y="0.0">java.util.Observer</node>
+    <node x="164.11458333333337" y="230.5">com.cyberterror.observer_jdk.DisplayElement</node>
+    <node x="334.71875" y="472.0">com.cyberterror.observer_jdk.AverageConditionDisplay</node>
+    <node x="0.0" y="483.5">com.cyberterror.observer_jdk.CurrentConditionDisplay</node>
+    <node x="692.71875" y="461.0">com.cyberterror.observer_jdk.WeatherDataJDK</node>
+    <node x="379.63541666666663" y="103.0">java.util.Observable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.cyberterror.observer_jdk.AverageConditionDisplay" target="java.util.Observable">
+      <point x="0.0" y="-119.5" />
+      <point x="503.71875" y="441.0" />
+      <point x="567.6354166666666" y="441.0" />
+      <point x="0.0" y="154.0" />
+    </edge>
+    <edge source="com.cyberterror.observer_jdk.WeatherDataJDK" target="java.util.Observable">
+      <point x="0.0" y="-130.5" />
+      <point x="876.21875" y="431.0" />
+      <point x="692.96875" y="431.0" />
+      <point x="125.33333333333331" y="154.0" />
+    </edge>
+    <edge source="java.util.Observable" target="java.util.Observer">
+      <point x="0.0" y="-154.0" />
+      <point x="567.6354166666666" y="78.0" />
+      <point x="532.4166666666667" y="78.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.observer_jdk.AverageConditionDisplay" target="java.util.Observer">
+      <point x="112.66666666666663" y="-119.5" />
+      <point x="616.3854166666666" y="441.0" />
+      <point x="766.1354166666666" y="441.0" />
+      <point x="766.1354166666666" y="78.0" />
+      <point x="613.0833333333335" y="78.0" />
+      <point x="80.66666666666674" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.observer_jdk.CurrentConditionDisplay" target="java.util.Observable">
+      <point x="98.33333333333331" y="-108.0" />
+      <point x="245.83333333333331" y="441.0" />
+      <point x="442.3020833333333" y="441.0" />
+      <point x="-125.33333333333333" y="154.0" />
+    </edge>
+    <edge source="com.cyberterror.observer_jdk.CurrentConditionDisplay" target="com.cyberterror.observer_jdk.DisplayElement">
+      <point x="0.0" y="-108.0" />
+      <point x="147.5" y="441.0" />
+      <point x="196.61458333333337" y="441.0" />
+      <point x="-32.5" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.observer_jdk.CurrentConditionDisplay" target="java.util.Observer">
+      <point x="-98.33333333333331" y="-108.0" />
+      <point x="49.166666666666686" y="441.0" />
+      <point x="81.22916666666663" y="441.0" />
+      <point x="81.22916666666663" y="78.0" />
+      <point x="451.75" y="78.0" />
+      <point x="-80.66666666666669" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.observer_jdk.AverageConditionDisplay" target="com.cyberterror.observer_jdk.DisplayElement">
+      <point x="-112.66666666666669" y="-119.5" />
+      <point x="391.0520833333333" y="431.0" />
+      <point x="261.61458333333337" y="431.0" />
+      <point x="32.5" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="530.0" y="361.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
