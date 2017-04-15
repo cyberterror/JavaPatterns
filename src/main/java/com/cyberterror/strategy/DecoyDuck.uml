@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.cyberterror.strategy.DecoyDuck</OriginalElement>
+  <nodes>
+    <node x="935.8333333333333" y="399.0">com.cyberterror.strategy.RedheadDuck</node>
+    <node x="283.5833333333333" y="204.5">com.cyberterror.strategy.Quack</node>
+    <node x="0.0" y="204.5">com.cyberterror.strategy.FlyRocketPowered</node>
+    <node x="295.75" y="0.0">com.cyberterror.strategy.FlyBehavior</node>
+    <node x="1283.8333333333333" y="399.0">com.cyberterror.strategy.DecoyDuck</node>
+    <node x="883.4583333333333" y="0.0">com.cyberterror.strategy.QuackBehavior</node>
+    <node x="158.0" y="204.5">com.cyberterror.strategy.FlyNoWay</node>
+    <node x="1009.4047619047619" y="204.5">com.cyberterror.strategy.MuteQuack</node>
+    <node x="430.8333333333333" y="204.5">com.cyberterror.strategy.FlyWithWings</node>
+    <node x="1153.404761904762" y="204.5">com.cyberterror.strategy.Squeak</node>
+    <node x="594.4047619047619" y="123.0">com.cyberterror.strategy.Duck</node>
+    <node x="380.0" y="399.0">com.cyberterror.strategy.MallardDuck</node>
+    <node x="596.8333333333333" y="399.0">com.cyberterror.strategy.RubberDuck</node>
+    <node x="210.0" y="399.0">com.cyberterror.strategy.ModelDuck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.cyberterror.strategy.Quack" target="com.cyberterror.strategy.QuackBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="345.5833333333333" y="93.0" />
+      <point x="898.9583333333333" y="93.0" />
+      <point x="-46.5" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.FlyWithWings" target="com.cyberterror.strategy.FlyBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="484.8333333333333" y="83.0" />
+      <point x="359.5" y="83.0" />
+      <point x="12.75" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.FlyNoWay" target="com.cyberterror.strategy.FlyBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="209.0" y="103.0" />
+      <point x="334.0" y="103.0" />
+      <point x="-12.75" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.ModelDuck" target="com.cyberterror.strategy.Duck">
+      <point x="50.0" y="-38.5" />
+      <point x="335.0" y="369.0" />
+      <point x="633.9047619047619" y="369.0" />
+      <point x="-158.0" y="108.0" />
+    </edge>
+    <edge source="com.cyberterror.strategy.MallardDuck" target="com.cyberterror.strategy.Duck">
+      <point x="52.33333333333337" y="-38.5" />
+      <point x="510.83333333333337" y="379.0" />
+      <point x="712.9047619047619" y="379.0" />
+      <point x="-79.0" y="108.0" />
+    </edge>
+    <edge source="com.cyberterror.strategy.RubberDuck" target="com.cyberterror.strategy.Duck">
+      <point x="0.0" y="-38.5" />
+      <point x="756.3333333333333" y="379.0" />
+      <point x="791.9047619047619" y="379.0" />
+      <point x="0.0" y="108.0" />
+    </edge>
+    <edge source="com.cyberterror.strategy.Duck" target="com.cyberterror.strategy.FlyBehavior">
+      <point x="-98.75" y="-108.0" />
+      <point x="693.1547619047619" y="73.0" />
+      <point x="385.0" y="73.0" />
+      <point x="38.25" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.RedheadDuck" target="com.cyberterror.strategy.Duck">
+      <point x="0.0" y="-38.5" />
+      <point x="1099.8333333333333" y="379.0" />
+      <point x="870.9047619047619" y="379.0" />
+      <point x="79.0" y="108.0" />
+    </edge>
+    <edge source="com.cyberterror.strategy.FlyRocketPowered" target="com.cyberterror.strategy.FlyBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="69.0" y="93.0" />
+      <point x="308.5" y="93.0" />
+      <point x="-38.25" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.DecoyDuck" target="com.cyberterror.strategy.Duck">
+      <point x="0.0" y="-38.5" />
+      <point x="1439.3333333333333" y="369.0" />
+      <point x="949.9047619047619" y="369.0" />
+      <point x="158.0" y="108.0" />
+    </edge>
+    <edge source="com.cyberterror.strategy.ModelDuck" target="com.cyberterror.strategy.Quack">
+      <point x="0.0" y="-38.5" />
+      <point x="285.0" y="379.0" />
+      <point x="314.5833333333333" y="379.0" />
+      <point x="-31.0" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.MallardDuck" target="com.cyberterror.strategy.Quack">
+      <point x="-52.33333333333337" y="-38.5" />
+      <point x="406.16666666666663" y="359.0" />
+      <point x="376.5833333333333" y="359.0" />
+      <point x="31.0" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.Squeak" target="com.cyberterror.strategy.QuackBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="1215.404761904762" y="93.0" />
+      <point x="991.9583333333333" y="93.0" />
+      <point x="46.5" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.MallardDuck" target="com.cyberterror.strategy.FlyWithWings">
+      <point x="0.0" y="-38.5" />
+      <point x="458.5" y="359.0" />
+      <point x="484.8333333333333" y="359.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.Duck" target="com.cyberterror.strategy.QuackBehavior">
+      <point x="98.75" y="-108.0" />
+      <point x="890.6547619047619" y="103.0" />
+      <point x="929.9583333333333" y="103.0" />
+      <point x="-15.5" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.ModelDuck" target="com.cyberterror.strategy.FlyNoWay">
+      <point x="-50.0" y="-38.5" />
+      <point x="235.0" y="379.0" />
+      <point x="209.0" y="379.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.strategy.MuteQuack" target="com.cyberterror.strategy.QuackBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="1071.404761904762" y="103.0" />
+      <point x="960.9583333333333" y="103.0" />
+      <point x="15.5" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8724458204334365" x="797.5" y="238.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
