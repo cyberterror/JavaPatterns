@@ -12,7 +12,7 @@ public class WeatherData implements Subject {
 
     // API METHODS
     private float getTemperature() {
-        float minX = 50.0f;
+        float minX = 0.0f;
         float maxX = 100.0f;
 
         Random rand = new Random();
@@ -21,7 +21,7 @@ public class WeatherData implements Subject {
     }
 
     private float getHumidity() {
-        float minX = 50.0f;
+        float minX = 0.0f;
         float maxX = 100.0f;
 
         Random rand = new Random();
@@ -30,7 +30,7 @@ public class WeatherData implements Subject {
     }
 
     private float getPressure() {
-        float minX = 50.0f;
+        float minX = 0.0f;
         float maxX = 100.0f;
 
         Random rand = new Random();
@@ -55,14 +55,19 @@ public class WeatherData implements Subject {
 
     @Override
     public void removeObserver(Observer observer) {
-        CommonUtils.print_good("Removed: " + observer);
-        observers.remove(observer);
+        if (this.observers.indexOf(observer) >= 0) {
+            CommonUtils.print_good("Removed: " + observer);
+            observers.remove(observer);
+        }
     }
 
     @Override
     public void notifyObservers() {
+        float temperature = getTemperature();
+        float humidity = getHumidity();
+        float pressure = getPressure();
         for (Observer observer : this.observers) {
-            observer.update(getTemperature(), getHumidity(), getPressure());
+            observer.update(temperature, humidity, pressure);
         }
     }
 
@@ -71,7 +76,7 @@ public class WeatherData implements Subject {
         working = true;
         while (working) {
             measurementsChanged();
-            Thread.sleep(1000);
+            Thread.sleep(300);
         }
     }
 

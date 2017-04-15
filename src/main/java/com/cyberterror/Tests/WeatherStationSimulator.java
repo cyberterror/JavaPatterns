@@ -9,12 +9,12 @@ public class WeatherStationSimulator {
     public static void main(String[] args) throws InterruptedException {
 
         // Start Weather data in new thread
-        Subject subject = new WeatherData();
+        Subject weatherData = new WeatherData();
 
         ExecutorService service = Executors.newFixedThreadPool(1);
         service.submit(() -> {
             try {
-                ((WeatherData)subject).startWorking();
+                ((WeatherData)weatherData).startWorking();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -22,32 +22,31 @@ public class WeatherStationSimulator {
 
         // start to register elements
         Thread.sleep(1000);
-        Observer observer1 = new FirstElement();
-        subject.registerObserver(observer1);
+        Observer currentConditionDisplay = new CurrentConditionDisplay(weatherData); // register in constructor
 
         // start to register elements
         Thread.sleep(3000);
-        Observer observer2 = new SecondElement();
-        subject.registerObserver(observer2);
+        Observer averageConditionDisplay = new AverageConditionDisplay(weatherData);
+
 
         // start to register elements
         Thread.sleep(1000);
-        Observer observer3 = new ThirdElement();
-        subject.registerObserver(observer3);
+
 
         // start to deregister elements
-        Thread.sleep(2000);
-        subject.removeObserver(observer1);
+        Thread.sleep(5000);
+        weatherData.removeObserver(currentConditionDisplay);
 
         // start to deregister elements
         Thread.sleep(4000);
-        subject.removeObserver(observer2);
+        weatherData.removeObserver(averageConditionDisplay);
+
 
         // start to deregister elements
         Thread.sleep(1000);
-        subject.removeObserver(observer3);
 
-        ((WeatherData)subject).stopWorking();
+
+        ((WeatherData)weatherData).stopWorking();
         service.shutdown();
     }
 }
