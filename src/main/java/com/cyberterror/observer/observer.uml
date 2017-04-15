@@ -2,12 +2,55 @@
 <Diagram>
   <ID>JAVA</ID>
   <OriginalElement />
-  <nodes />
+  <nodes>
+    <node x="783.0" y="149.0">com.cyberterror.observer.WeatherData</node>
+    <node x="261.0" y="253.5">com.cyberterror.observer.ThirdElement</node>
+    <node x="401.5" y="23.0">com.cyberterror.observer.Observer</node>
+    <node x="522.0" y="253.5">com.cyberterror.observer.SecondElement</node>
+    <node x="906.5" y="0.0">com.cyberterror.observer.Subject</node>
+    <node x="0.0" y="253.5">com.cyberterror.observer.FirstElement</node>
+  </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <edges>
+    <edge source="com.cyberterror.observer.FirstElement" target="com.cyberterror.observer.Observer">
+      <point x="0.0" y="-38.0" />
+      <point x="120.5" y="119.0" />
+      <point x="429.125" y="119.0" />
+      <point x="-82.875" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.observer.ThirdElement" target="com.cyberterror.observer.Observer">
+      <point x="0.0" y="-38.0" />
+      <point x="381.5" y="129.0" />
+      <point x="484.375" y="129.0" />
+      <point x="-27.625" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.observer.SecondElement" target="com.cyberterror.observer.Observer">
+      <point x="0.0" y="-38.0" />
+      <point x="642.5" y="129.0" />
+      <point x="539.625" y="129.0" />
+      <point x="27.625" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.observer.WeatherData" target="com.cyberterror.observer.Observer">
+      <point x="-88.0" y="-142.5" />
+      <point x="871.0" y="119.0" />
+      <point x="594.875" y="119.0" />
+      <point x="82.875" y="26.5" />
+    </edge>
+    <edge source="com.cyberterror.observer.WeatherData" target="com.cyberterror.observer.Subject">
+      <point x="88.0" y="-142.5" />
+      <point x="0.0" y="49.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="594.0" y="217.0" />
   <SelectedNodes />
-  <Categories />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
 </Diagram>
 
