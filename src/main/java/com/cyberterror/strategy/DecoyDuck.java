@@ -1,6 +1,6 @@
 package com.cyberterror.strategy;
 
-public class DecoyDuck extends Duck{
+public class DecoyDuck extends Duck {
     public DecoyDuck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
         super(flyBehavior, quackBehavior);
     }

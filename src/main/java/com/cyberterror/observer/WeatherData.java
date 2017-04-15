@@ -11,7 +11,7 @@ public class WeatherData implements Subject {
     private boolean working;
 
     // API METHODS
-    public float getTemperature() {
+    private float getTemperature() {
         float minX = 50.0f;
         float maxX = 100.0f;
 
@@ -20,7 +20,7 @@ public class WeatherData implements Subject {
         return rand.nextFloat() * (maxX - minX) + minX;
     }
 
-    public float getHumidity() {
+    private float getHumidity() {
         float minX = 50.0f;
         float maxX = 100.0f;
 
@@ -29,7 +29,7 @@ public class WeatherData implements Subject {
         return rand.nextFloat() * (maxX - minX) + minX;
     }
 
-    public float getPressure() {
+    private float getPressure() {
         float minX = 50.0f;
         float maxX = 100.0f;
 
@@ -39,7 +39,7 @@ public class WeatherData implements Subject {
     }
 
     // API callback
-    public void measurementsChanged() {
+    private void measurementsChanged() {
         notifyObservers();
     }
 
