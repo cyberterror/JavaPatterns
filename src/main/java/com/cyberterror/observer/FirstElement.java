@@ -1,8 +1,15 @@
 package com.cyberterror.observer;
 
+import com.cyberterror.utils.CommonUtils;
+
 public class FirstElement implements Observer {
     @Override
     public void update(float temperature, float humidity, float pressure) {
-        System.out.println(this.getClass().getSimpleName() + " notified: temperature " + temperature + ", humidity " + humidity + ", pressure " + pressure);
+        CommonUtils.print_info(this.getClass().getSimpleName() + " notified: temperature " + temperature + ", humidity " + humidity + ", pressure " + pressure);
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName();
     }
 }

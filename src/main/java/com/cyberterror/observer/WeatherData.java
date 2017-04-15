@@ -1,11 +1,14 @@
 package com.cyberterror.observer;
 
+import com.cyberterror.utils.CommonUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class WeatherData implements Subject {
 
+    private boolean working;
 
     // API METHODS
     public float getTemperature() {
@@ -47,10 +50,12 @@ public class WeatherData implements Subject {
     @Override
     public void registerObserver(Observer observer) {
         observers.add(observer);
+        CommonUtils.print_good("Registered: " + observer);
     }
 
     @Override
     public void removeObserver(Observer observer) {
+        CommonUtils.print_good("Removed: " + observer);
         observers.remove(observer);
     }
 
@@ -62,9 +67,16 @@ public class WeatherData implements Subject {
     }
 
     public void startWorking() throws InterruptedException {
-        while (true) {
-            Thread.sleep(1000);
+        CommonUtils.print_good("Started to work");
+        working = true;
+        while (working) {
             measurementsChanged();
+            Thread.sleep(1000);
         }
+    }
+
+    public void stopWorking(){
+        CommonUtils.print_good("Termination of the work");
+        this.working = false;
     }
 }
